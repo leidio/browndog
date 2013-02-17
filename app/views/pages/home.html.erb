@@ -1,6 +1,10 @@
+<% if user_signed_in? %>
+  <h3>Welcome, bitch</h3>
+<% else %>
 <div class="hero-unit">
 	<h1>JDick's Precious Innovators Lab</h1>
 	<p>This is the beginning of a new project</p>
 	<br>
-	<%= link_to "Team Up!", "#", class: "btn btn-primary btn-large" %>
+	<%= link_to "Team Up!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </div>
+<% end %>
